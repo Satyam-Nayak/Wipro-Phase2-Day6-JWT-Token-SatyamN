@@ -40,6 +40,7 @@ public class UserController {
         return service.addUser(user);
     }
 
+
     @PostMapping("/addjob")
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public Job addjob(@RequestBody Job job) {
